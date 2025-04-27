@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local server</title>
+  <link
+    rel="stylesheet"
+    href="https://chatbot.gitcommitt.com/assets/widget/style.css"
+  />
+</head>
+<body>
+  <h1>Just chat-bot it. And run a local-server, pal</h1>
+
+  <script type="module" src="./main.js"></script>
+  <script src="https://chatbot.gitcommitt.com/assets/widget/loader-snippet.js"></script>
+  <script>
+    const scriptElement = document.createElement("script");
+    scriptElement.src = `https://chatbot.gitcommitt.com/assets/widget/chat-widget.umd.js?v=${Math.floor(
+      Math.random() * 10000000
+    )}`;
+    document.body.appendChild(scriptElement);
+  </script>
+</body>
+</html>
