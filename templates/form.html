@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Page</h1>
+    <form action="/form" method="post">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+    {% if name %}
+        <p>Hello, {{ name }}!</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
